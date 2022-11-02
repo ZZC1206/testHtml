@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <video controls="controls" autoplay muted style="width: 100%">
+    <video id="shipin" controls="controls" autoplay muted style="width: 100%">
         <source
             src="https://mobile.ge.shb.ltd/Background/cso/api/upload/getFile?fileRelativePath=/202211/1667369008155.mp4&fileName=wx_camera_1667122137469.mp4" />
     </video>
@@ -21,7 +21,7 @@
       "WeixinJSBridgeReady",
       function() {
         setTimeout(() => {
-          document.getElementsByTagName("video")[0].play();
+          document.getElementsById("shipin").play();
         }, 500);
       },
       false
